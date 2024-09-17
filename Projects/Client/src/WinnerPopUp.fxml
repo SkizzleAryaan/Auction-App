@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="306.0" prefWidth="254.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WinnerController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="192.0" style="-fx-background-color: #FFE827;" VBox.vgrow="ALWAYS">
+      <children>
+            <Line endX="-282.6999816894531" endY="-33.00001525878906" layoutX="535.0" layoutY="105.0" startX="-535.0" startY="-33.0000114440918" />
+            <Label alignment="CENTER" layoutX="80.0" layoutY="14.0" style="&#10;" text="Winner!" textAlignment="CENTER" underline="true" wrapText="false">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="81.0" style="&#10;" text="User:" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="135.0" style="&#10;" text="Item:" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="197.0" style="&#10;" text="Bid:" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="winUser" alignment="CENTER" layoutX="88.0" layoutY="81.0" prefHeight="36.0" prefWidth="158.0" style="&#10;" text="username" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="winItem" alignment="CENTER" layoutX="88.0" layoutY="135.0" prefHeight="36.0" prefWidth="158.0" style="&#10;" text="item name" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="winBid" alignment="CENTER" layoutX="88.0" layoutY="197.0" prefHeight="36.0" prefWidth="158.0" style="&#10;" text="bid amount" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

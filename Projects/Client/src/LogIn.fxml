@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="464.0" prefWidth="518.0" style="-fx-background-color: #76A7E3;" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="141.0" layoutY="56.0" style="&#10;" text="Log In" textAlignment="CENTER" wrapText="false">
+          <font>
+            <Font name="System Bold" size="50.0" />
+          </font>
+        </Label>
+            <Button fx:id="guestButton" layoutX="100.0" layoutY="400.0" mnemonicParsing="false" onAction="#startAsGuest" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #9BC5F8;" text="Guest">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="signUpButton" layoutX="250.0" layoutY="397.0" mnemonicParsing="false" onAction="#signUp" prefHeight="50.0" prefWidth="78.0" style="-fx-background-color: #9BC5F8;" text="Sign Up">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField id="logText" fx:id="logField" layoutX="140.0" layoutY="184.0" promptText="Enter Username" style="-fx-background-color: #9BC5F8;" />
+            <Label layoutX="140.0" layoutY="148.0" text="Username:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="240.0" text="Password:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordBox" layoutX="140.0" layoutY="276.0" promptText="Enter Password" style="-fx-background-color: #9BC5F8;" />
+            <Button id="logButton" fx:id="logButton" layoutX="164.0" layoutY="322.0" mnemonicParsing="false" style="-fx-background-color: #3583C5;" text="Log In">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

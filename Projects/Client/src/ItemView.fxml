@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ItemViewController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #E56E6E;" VBox.vgrow="ALWAYS">
+      <children>
+        <Label id="timeLabel" fx:id="timeLabel" alignment="CENTER" layoutX="125.0" layoutY="287.0" style="&#10;" text="10 seconds" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+          <font>
+            <Font size="25.0" />
+          </font>
+        </Label>
+            <ButtonBar layoutX="-15.0" prefHeight="47.0" prefWidth="543.0" style="-fx-background-color: #E56E6E;">
+               <buttons>
+                <Button id="prevButton" fx:id="prevButton" mnemonicParsing="false" onAction="#prev" prefHeight="31.0" prefWidth="194.0" style="-fx-background-color: #FF7D7D;" text="Previous Item">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button id="nextButton" fx:id="nextButton" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #FF7D7D;" text="Next Item">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button id="logOutButton" fx:id="logOutButton" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="194.0" style="-fx-background-color: #FF7D7D;" text="Log Out">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+            <Label layoutX="14.0" layoutY="287.0" text="Time Left: ">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView id="itemPic" fx:id="itemPic" fitHeight="116.0" fitWidth="123.0" layoutX="19.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@9e8bb2407fe4001c92da018d9cea250e_2113506682197964666.png" />
+               </image>
+            </ImageView>
+            <Label id="itemName" fx:id="itemLabel" layoutX="36.0" layoutY="47.0" text="Raiden Shogun" underline="true">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <Line endX="-100.0" endY="329.20001220703125" layoutX="525.0" layoutY="70.0" startX="-100.0" startY="-22.500011444091797" />
+            <Line endX="106.79998779296875" endY="-33.0000114440918" layoutX="535.0" layoutY="80.0" startX="-535.0" startY="-33.0000114440918" />
+            <Label layoutX="17.0" layoutY="306.0" text="¥">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Label>
+            <Label id="currBidLabel" fx:id="currBidLabel" layoutX="63.0" layoutY="305.0" prefHeight="94.0" prefWidth="356.0" text="1000000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="141.0" layoutY="189.0" style="&#10;" text="Minimum Bid: ¥ " textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="141.0" layoutY="212.0" style="&#10;" text="Buyout Bid: ¥ " textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label id="minBid" fx:id="minBidLabel" alignment="TOP_LEFT" layoutX="250.0" layoutY="188.0" prefHeight="22.0" prefWidth="156.0" style="&#10;" text="10" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label id="buyBid" fx:id="buyoutBidLabel" alignment="TOP_LEFT" layoutX="234.0" layoutY="211.0" prefHeight="22.0" prefWidth="174.0" style="&#10;" text="10000000000000" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="435.0" layoutY="54.0" style="&#10;" text="Current Bidders:" textAlignment="CENTER" underline="true" wrapText="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea id="currBiddersText" fx:id="currBiddersText" editable="false" layoutX="435.0" layoutY="79.0" prefHeight="313.0" prefWidth="199.0" wrapText="true" />
+            <Label layoutX="15.0" layoutY="251.0" text="Enter Bid: ¥ ">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField id="bidInputBox" fx:id="bidInputBox" layoutX="143.0" layoutY="255.0" prefHeight="26.0" prefWidth="168.0" />
+            <Button id="bidInputButton" fx:id="bidInputButton" layoutX="321.0" layoutY="252.0" mnemonicParsing="false" onAction="#sendBid" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: #FF7D7D;" text="Submit Bid">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label id="itemDesc" fx:id="itemDescLabel" layoutX="140.0" layoutY="121.0" prefHeight="67.0" prefWidth="274.0" text="ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label id="usernameLabel" fx:id="usernameLabel" layoutX="535.0" layoutY="13.0" text="Username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

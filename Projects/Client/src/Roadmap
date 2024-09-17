@@ -1,0 +1,40 @@
+Roadmap: 
+
+Create all GUI elements - DONE!
+
+Finish Server + Client implementation (basic) - DONE!
+
+Handle Multiple Clients (basic) - DONE!
+
+Implement Client GUI - DONE
+
+Full Auction implementation (hard) - DONE holy fuck
+- min starting price, buy out, multiple items at once, 
+- save the bid on UI (update curr bid and stuff) 
+
+Past items (maybe dont need a unique button)- DONE
+- SAVE currBidders (maybe in items)
+
+Error Handling and Popups (incorrect bid stuff), winning - DONE
+
+Username and Password Implementation (login) using MongoDB - DONE 
+
+Item storage on MongoDB - DONE
+
+BG music - DONE
+
+Format images so all same size as raiden photo (make a theme too) - DONE
+
+Password Hashing - WIP
+
+Jar files
+
+Documentation 
+
+Timer Implementation (note: add 3 sec after a bid is placed if timer < 3),
+make a new thread for each item - nah fuck this
+
+
+
+
+Additional Extra Credit (Cloud Hosting w/ AWS)
